@@ -1,4 +1,4 @@
-# aws-amplify-react-iot-pub-sub-using-cp
+# aws-amplify-react-iot-pub-sub-using-lambda
 
 ## Overview
 

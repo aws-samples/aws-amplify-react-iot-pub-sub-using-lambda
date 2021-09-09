@@ -1,0 +1,50 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-awsamplifyreacttempl-dev-142141-authRole",
+      "UnauthRoleArn": "arn:aws:iam::819808823496:role/amplify-awsamplifyreacttempl-dev-142141-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::819808823496:role/amplify-awsamplifyreacttempl-dev-142141-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-awsamplifyreacttempl-dev-142141-deployment",
+      "UnauthRoleName": "amplify-awsamplifyreacttempl-dev-142141-unauthRole",
+      "StackName": "amplify-awsamplifyreacttempl-dev-142141",
+      "StackId": "arn:aws:cloudformation:us-east-1:819808823496:stack/amplify-awsamplifyreacttempl-dev-142141/112bbf90-a9fa-11eb-b408-12b95c73a183",
+      "AmplifyAppId": "d1tmskksdvwiin"
+    },
+    "categories": {
+      "auth": {
+        "cognito81d9f49f": {}
+      },
+      "function": {
+        "amplifyiotlambda": {
+          "deploymentBucketName": "amplify-awsamplifyreacttempl-dev-142141-deployment",
+          "s3Key": "amplify-builds/amplifyiotlambda-706d465034786b77566e-build.zip"
+        }
+      }
+    }
+  },
+  "lambdatest": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-awsamplifyreacttempl-lambdatest-164241-authRole",
+      "UnauthRoleArn": "arn:aws:iam::641158387104:role/amplify-awsamplifyreacttempl-lambdatest-164241-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::641158387104:role/amplify-awsamplifyreacttempl-lambdatest-164241-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-awsamplifyreacttempl-lambdatest-164241-deployment",
+      "UnauthRoleName": "amplify-awsamplifyreacttempl-lambdatest-164241-unauthRole",
+      "StackName": "amplify-awsamplifyreacttempl-lambdatest-164241",
+      "StackId": "arn:aws:cloudformation:us-east-1:641158387104:stack/amplify-awsamplifyreacttempl-lambdatest-164241/95471ac0-b2b2-11eb-9b38-0a1e17b4f729",
+      "AmplifyAppId": "d1s0xfmu9kzm45"
+    },
+    "categories": {
+      "auth": {
+        "cognito81d9f49f": {}
+      },
+      "function": {
+        "amplifyiotlambda": {
+          "deploymentBucketName": "amplify-awsamplifyreacttempl-lambdatest-164241-deployment",
+          "s3Key": "amplify-builds/amplifyiotlambda-79322f6b32366b595776-build.zip"
+        }
+      }
+    }
+  }
+}

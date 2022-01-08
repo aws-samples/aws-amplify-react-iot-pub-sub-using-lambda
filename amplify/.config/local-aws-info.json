@@ -4,9 +4,9 @@
     "useProfile": true,
     "profileName": "default"
   },
-  "lambdatest": {
+  "lambdaapp": {
     "configLevel": "project",
     "useProfile": true,
-    "profileName": "iotsampleappuser2"
+    "profileName": "default"
   }
 }

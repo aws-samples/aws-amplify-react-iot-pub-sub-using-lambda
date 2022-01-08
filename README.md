@@ -17,9 +17,21 @@ The functionality is similar to (though simpler, less pretty) version of the "Te
 Refer: https://docs.amplify.aws/start/getting-started/installation/q/integration/js
 
 1. Before we begin, make sure you have the following installed:
-    Node.js v12.x or later
-    npm v5.x or later
-    git v2.14.1 or later
+   Node.js v12.x or later
+
+      ```sh
+         node -v
+      ```
+   npm v5.x or later
+
+      ```sh
+         npm -v
+      ```
+   git v2.14.1 or later
+
+      ```sh
+         git --version
+      ```
 
 2. Install amplify cli
     
@@ -68,7 +80,7 @@ Refer: https://docs.amplify.aws/start/getting-started/installation/q/integration
 1. Clone the repo
 
   ```sh
-  git clone https://github.com/matwerber1/aws-amplify-react-iot-pub-sub-using-lambda
+  git clone https://github.com/aws-samples/aws-amplify-react-iot-pub-sub-using-lambda
   ```
 
 2. move to project root

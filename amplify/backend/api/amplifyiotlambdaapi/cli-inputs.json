@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "paths": {
+    "/amplifyiotlambdaapi": {
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      },
+      "lambdaFunction": "amplifyiotlambda"
+    }
+  }
+}

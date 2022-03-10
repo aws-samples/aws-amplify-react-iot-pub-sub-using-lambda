@@ -6,7 +6,7 @@
     "aws-amplify": "^1.1.19",
     "aws-amplify-react": "^2.3.0",
     "aws-iot-device-sdk": "^2.2.1",
-    "aws-sdk": "^2.409.0",
+    "aws-sdk": "^2.814.0",
     "deepmerge": "^3.2.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",

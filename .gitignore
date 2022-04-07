@@ -18,6 +18,7 @@
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/backend/awscloudformation/build
+amplify/backend/function/amplifyiotlambda/src/node_modules
 
 build/
 dist/

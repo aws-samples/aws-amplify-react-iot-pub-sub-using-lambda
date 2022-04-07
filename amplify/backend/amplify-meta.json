@@ -26,7 +26,7 @@
         "IdentityPoolName": "cognito81d9f49f_identitypool_81d9f49f__lambdaapp",
         "UserPoolName": "cognito81d9f49f_userpool_81d9f49f"
       },
-      "lastPushTimeStamp": "2022-01-08T07:07:35.271Z",
+      "lastPushTimeStamp": "2022-04-07T07:21:08.336Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-awsamplifyreacttempl-lambdaapp-223553-deployment/amplify-cfn-templates/auth/cognito81d9f49f-cloudformation-template.yml",
         "logicalId": "authcognito81d9f49f"
@@ -68,15 +68,20 @@
         "Name": "amplifyiotlambda-lambdaapp",
         "LambdaExecutionRole": "awsamplifyreacttemplLambdaRole06f6bdec-lambdaapp"
       },
-      "lastPushTimeStamp": "2022-01-08T07:07:35.273Z",
+      "lastPushTimeStamp": "2022-04-07T07:21:08.355Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-awsamplifyreacttempl-lambdaapp-223553-deployment/amplify-cfn-templates/function/amplifyiotlambda-cloudformation-template.json",
         "logicalId": "functionamplifyiotlambda"
       },
+      "lastBuildTimeStamp": "2022-04-07T07:19:47.282Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-04-07T07:19:49.814Z",
+      "distZipFilename": "amplifyiotlambda-556c75445939616f6850-build.zip",
       "s3Bucket": {
         "deploymentBucketName": "amplify-awsamplifyreacttempl-lambdaapp-223553-deployment",
-        "s3Key": "amplify-builds/amplifyiotlambda-6c3336654c3863765768-build.zip"
-      }
+        "s3Key": "amplify-builds/amplifyiotlambda-556c75445939616f6850-build.zip"
+      },
+      "lastPushDirHash": "wHIhLLzj6ZgvteohrKrwSkQ3qSA="
     }
   },
   "api": {
@@ -98,7 +103,7 @@
         "RootUrl": "https://pguxcl0mkk.execute-api.us-east-1.amazonaws.com/lambdaapp",
         "ApiId": "pguxcl0mkk"
       },
-      "lastPushTimeStamp": "2022-01-08T07:07:35.274Z",
+      "lastPushTimeStamp": "2022-04-07T07:21:08.339Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-awsamplifyreacttempl-lambdaapp-223553-deployment/amplify-cfn-templates/api/amplifyiotlambdaapi-cloudformation-template.json",
         "logicalId": "apiamplifyiotlambdaapi"

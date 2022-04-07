@@ -150,6 +150,21 @@ Note: It is recommended to run this command from the root of your app directory
   };
   ```
 
+3. Open `src/aws-iotcore-configuration.js` and:
+   1. set the **endpoint** Iot control plane endpoint for the region
+   2. specify your AWS **region**
+   3. specify policy to attach to the authenticated cognito identity
+
+```js
+  // src/aws-iotcore-configuration.js
+  var awsIotConfiguration = {
+    endpoint: 'https://iot.us-east-1.amazonaws.com',
+    region: 'us-east-1',
+    apiVersion: '2015-05-28',
+    policy: '{"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": [ "iot:Subscribe" ], "Resource": ["arn:aws:iot:us-east-1:123456789012:topicfilter/*"]},{"Effect": "Allow","Action": [ "iot:Connect" ],"Resource": ["arn:aws:iot:us-east-1:123456789012:client/*"] },{"Effect": "Allow","Action": [ "iot:Publish","iot:Receive" ],"Resource": ["arn:aws:iot:us-east-1:123456789012:topic/*"]}]}'
+  };
+  ```
+
 7. Navigate to the [AWS IAM Console](https://console.aws.amazon.com/iam/home?#/roles) and search for the IAM role for your authorized Cognito Identity pool users. 
 It will have a name similar to `arn:aws:iam::123456790:role/amplify-awsamplifyreacttempl-lambdatest-115859-authRole` and have a creation time that matches the date your deploying this project. Be sure to select the `authRole`, not the `unauthRole`
 

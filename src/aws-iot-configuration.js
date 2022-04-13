@@ -1,6 +1,6 @@
 var awsIotConfiguration = {
     endpoint: 'wss://<ATS-endpoint>/mqtt',
-    region: 'us-east-1',
+    region: '<REGION>',
     poolId: '<Cognito-identity-pool-id>',
     host: '<ATS-endpoint>'
   };

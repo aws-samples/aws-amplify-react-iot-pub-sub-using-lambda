@@ -43,7 +43,7 @@
       "function": {
         "amplifyiotlambda": {
           "deploymentBucketName": "amplify-awsamplifyreacttempl-lambdaapp-223553-deployment",
-          "s3Key": "amplify-builds/amplifyiotlambda-6c3336654c3863765768-build.zip"
+          "s3Key": "amplify-builds/amplifyiotlambda-556c75445939616f6850-build.zip"
         }
       }
     }

@@ -39,18 +39,25 @@ app.get('/item/*', function(req, res) {
 ****************************/
 
 app.post('/amplifyiotlambdaapi', function(req, res) {
-
-  const iot = new aws.Iot({region: 'us-east-1', apiVersion: '2015-05-28', endpoint: 'https://iot.us-east-1.amazonaws.com'});
-
-  const policyName = "amplifyiotlambdaapipolicy";
+  const policyName = "amplifyiotlambdaapipolicy-v2";
   const id = req.apiGateway.event.requestContext.identity.cognitoIdentityId;
 
-  console.log("Create policy and attach with cognito identity id: " + id);
+  const region = req.body.region;
+  const apiVersion = req.body.apiVersion;
+  const endpoint = req.body.endpoint;
+  const policyDoc = req.body.policy;
+
+  const iot = new aws.Iot({region: region, apiVersion: apiVersion, endpoint: endpoint});
+
+  console.log("Create policy " + policyName + " and attach with cognito identity id: " + id);
+  console.log("Region:" + region);
+  console.log("ApiVersion:" + apiVersion);
+  console.log("Endpoint:" + endpoint);
+  console.log("Policy:" + policyDoc);
+  
   var params = {policyName: policyName};
   iot.getPolicy(params , function(err, data) {
         if (err) {
-             var policy = {"Version": "2012-10-17", "Statement": [{"Effect": "Allow", "Action": ["*"],"Resource": ["*"]}]};
-             var policyDoc = JSON.stringify(policy);
 
              console.log("Creating policy: " + policyName + " with doc: " + policyDoc);
 

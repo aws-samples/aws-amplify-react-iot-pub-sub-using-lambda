@@ -3,6 +3,7 @@ import {Auth} from 'aws-amplify';
 import JSONTree from 'react-json-tree';
 import AWS from 'aws-sdk';
 import { API } from 'aws-amplify'
+import AWSConfiguration from './aws-iotcore-configuration.js';
 
 function AuthDisplay(props) {
 
@@ -16,14 +17,20 @@ function AuthDisplay(props) {
         },[]);
 
     // Initialize the Amazon Cognito credentials provider
-    AWS.config.region = 'us-east-1';
+    AWS.config.region = AWSConfiguration.region;
     AWS.config.credentials =  essentialCredentials;
 
     function callApi(id) {
-
+            //Send config params to the lambda function
             const params = {
-                body: {}
+                body: {
+                region: AWSConfiguration.region,
+                apiVersion: AWSConfiguration.apiVersion,
+                endpoint: AWSConfiguration.endpoint,
+                policy: AWSConfiguration.policy
+                }
             };
+
             API.post('amplifyiotlambdaapi', '/amplifyiotlambdaapi', params)
             .then(resp => {
             console.log("Successfully created policy and attached with the identity", resp);
@@ -34,11 +41,14 @@ function AuthDisplay(props) {
     }
 
     const [cognitoIdentityId, setCognitoIdentityId] = useState({});
+
     useEffect(() => {
       console.log('useEffect for cognitoIdentityId triggered.');
       Auth.currentCredentials().then((info) => {
         setCognitoIdentityId(info._identityId);
+
         console.log("Cognito identity id: " + info._identityId);
+
         callApi(info._identityId);
       });
     },[]);

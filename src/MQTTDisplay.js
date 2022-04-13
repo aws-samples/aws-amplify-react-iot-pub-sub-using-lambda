@@ -183,7 +183,7 @@ function MQTTSubscription(props) {
   async function connectToAwsIot() {
 
     // mqtt clients require a unique clientId; we generate one below
-    var clientId = 'mqtt-explorer-' + (Math.floor((Math.random() * 100000) + 1));
+    var clientId = 'iotcognito-lambda-sampleapp-' + (Math.floor((Math.random() * 100000) + 1));
 
     // get credentials and, from them, extract key, secret key, and session token
     // Amplify's auth functionality makes this easy for us...

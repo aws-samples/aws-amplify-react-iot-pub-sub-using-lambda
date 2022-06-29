@@ -97,32 +97,33 @@ npm install
 
 2. Initialize Amplify
 
-  ```sh
-  amplify init
-  ```
-
+```sh
+amplify init
+```
+``` 
 Note: It is recommended to run this command from the root of your app directory
 ? Do you want to use an existing environment? Yes
 ? Choose the environment you would like to use: (Use arrow keys)
 ❯ lambdatest
 ? Select the authentication method you want to use: AWS profile
 ? Please choose the profile you want to use <select the profile you created above>
-
+```
+ 
 3. Push / create your backend
 
   ```
   amplify push
   ```
-
+```
 ? Are you sure you want to continue? Yes
-
+```
 4. Navigate to the [AWS IoT web console](https://console.aws.amazon.com/iot/home?) and:
 
   1. Click **Settings** in the lower left, and copy your **Endpoint** to a text file; you'll need this later. It would look similar to below:
 
-    ```
-    a6l17n41bqjml-ats.iot.us-east-1.amazonaws.com
-    ```
+```
+a6l17n41bqjml-ats.iot.us-east-1.amazonaws.com
+```
 
 5. Navigate to the [Cognito Co thensole](https://console.aws.amazon.com/cognito/home?) and:
 

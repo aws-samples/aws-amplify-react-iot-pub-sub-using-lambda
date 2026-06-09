@@ -178,13 +178,22 @@ It will have a name similar to `arn:aws:iam::123456790:role/amplify-awsamplifyre
         {
             "Effect": "Allow",
             "Action": [
-                "iot:Connect",
+                "iot:Connect"
+            ],
+            "Resource": [
+                "arn:aws:iot:<REGION>:<ACCOUNT_ID>:client/${cognito-identity.amazonaws.com:sub}"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
                 "iot:Publish",
                 "iot:Subscribe",
                 "iot:Receive"
             ],
             "Resource": [
-                "*"
+                "arn:aws:iot:<REGION>:<ACCOUNT_ID>:topic/*",
+                "arn:aws:iot:<REGION>:<ACCOUNT_ID>:topicfilter/*"
             ]
         }
     ]
